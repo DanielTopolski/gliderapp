@@ -11,13 +11,13 @@ CREATE TABLE aircraft (--table containing all neccessary info on the aircrafts
     PRIMARY KEY("id" AUTOINCREMENT),
 	FOREIGN KEY("club_id") REFERENCES "club"("id"),
 	CHECK("kind" LIKE 'szybowiec' OR "kind" LIKE 'samolot')
-)
+);
 
 CREATE TABLE airplane_technical (
 	id	INTEGER NOT NULL,
 	PRIMARY KEY("id"),
 	FOREIGN KEY("id") REFERENCES "aircraft"("id")
-)
+);
 
 CREATE TABLE bulletin (
 	id	INTEGER NOT NULL,
@@ -28,7 +28,7 @@ CREATE TABLE bulletin (
 	done	INTEGER,
 	PRIMARY KEY("id"),
 	FOREIGN KEY("aircraft_id") REFERENCES "aircraft"("id")
-)
+);
 
 CREATE TABLE club (--table containing info about the clubs in the database
 	id	INTEGER NOT NULL,
@@ -38,7 +38,7 @@ CREATE TABLE club (--table containing info about the clubs in the database
 	email	TEXT,
 	website	TEXT,
 	PRIMARY KEY("id" AUTOINCREMENT)
-)
+);
 
 CREATE TABLE document_aircraft (--table containing documents of the aircrafts in the database
 	id	INTEGER NOT NULL UNIQUE,
@@ -49,7 +49,7 @@ CREATE TABLE document_aircraft (--table containing documents of the aircrafts in
 	valid_till	TEXT NOT NULL, --validity date of a document
 	PRIMARY KEY("id" AUTOINCREMENT),
 	FOREIGN KEY("aircraft_id") REFERENCES "aircraft"("id")
-)
+);
 
 CREATE TABLE document_pilot (--table containing info about the documents of all pilots in the database
 	id	INTEGER NOT NULL,
@@ -60,7 +60,7 @@ CREATE TABLE document_pilot (--table containing info about the documents of all 
 	valid_till	TEXT NOT NULL, --valididy date of a document
 	PRIMARY KEY("id" AUTOINCREMENT),
 	FOREIGN KEY("pilot_id") REFERENCES "person"("id")
-)
+);
 
 CREATE TABLE fee_payment (--table containing all the payments
 	id	INTEGER NOT NULL UNIQUE,
@@ -73,7 +73,7 @@ CREATE TABLE fee_payment (--table containing all the payments
 	service_life_fee	INTEGER, --a checkbox indicating if a payment is a "service_life" (resurs) one or not
 	PRIMARY KEY("id" AUTOINCREMENT),
 	FOREIGN KEY("pilot_id") REFERENCES "person"("id")
-)
+);
 
 CREATE TABLE flight (--table containing info about flights
 	id	INTEGER NOT NULL,
@@ -100,7 +100,7 @@ CREATE TABLE flight (--table containing info about flights
 	FOREIGN KEY("tow_plane_id") REFERENCES "aircraft"("id"),
 	FOREIGN KEY("tow_plane_pilot_or_winch_operator_id") REFERENCES "person"("id"),
 	CHECK("takeoff_type" LIKE 'W' OR "takeoff_type" LIKE 'S')
-)
+);
 
 CREATE TABLE glider_technical (--table containig technical data of an aircraft
 	id	INTEGER NOT NULL,
@@ -109,7 +109,7 @@ CREATE TABLE glider_technical (--table containig technical data of an aircraft
 	ciegla	TEXT NOT NULL, --???
 	platowiec	TEXT NOT NULL, --???
 	FOREIGN KEY("id") REFERENCES "aircraft"("id")
-)
+);
 
 CREATE TABLE person (--table containing all the info about pilots, instructors, etc.
 	id	INTEGER NOT NULL,
@@ -132,20 +132,20 @@ CREATE TABLE person (--table containing all the info about pilots, instructors, 
 	balance	REAL, --financial information
 	PRIMARY KEY("id" AUTOINCREMENT),
 	CHECK(length("PESEL") = 11)
-)
+);
 
 CREATE TABLE person_club (
 	pilot_id	INTEGER NOT NULL,
 	club_id	INTEGER,
 	FOREIGN KEY("club_id") REFERENCES "club"("id"),
 	FOREIGN KEY("pilot_id") REFERENCES "person"("id")
-)
+);
 
 CREATE TABLE pilot_airplane (
 	pilot_id	INTEGER NOT NULL,
 	permision	TEXT NOT NULL,
 	FOREIGN KEY("pilot_id") REFERENCES "person"("id")
-)
+);
 
 CREATE TABLE pilot_glider (
 	pilot_id	INTEGER NOT NULL,
@@ -153,7 +153,7 @@ CREATE TABLE pilot_glider (
 	hours_flown_total	TEXT NOT NULL, --total amount of hours flown by a pilot
 	hours_flown_alone	TEXT NOT NULL, --the time amount of a pilot's solo flights
 	FOREIGN KEY("pilot_id") REFERENCES "person"("id")
-)
+);
 
 CREATE TABLE pilot_permission (
 	id	INTEGER NOT NULL,
@@ -163,10 +163,10 @@ CREATE TABLE pilot_permission (
 	perm_no	TEXT NOT NULL,
 	PRIMARY KEY("id"),
 	FOREIGN KEY("pilot_id") REFERENCES "person"("id")
-)
+);
 
 CREATE TABLE task_exercise (
 	task	TEXT NOT NULL,
 	exercise	TEXT NOT NULL,
 	training	TEXT NOT NULL
-)
+);
