@@ -1,0 +1,87 @@
+[
+        {
+            "id": 1,
+            "first_name": "Jan",
+            "last_name": "Kowalski",
+            "date_of_birth": "1977-04-03",
+            "PESEL": 77040359385,
+            "phone_no": "554-245-236",
+            "email": "jkow@gmail.com",
+            "address": {
+                "street": "ul. Lotnicza 5",
+                "zip_code": "39-400",
+                "city": "Tarnobrzeg"
+            },
+            "login": "jkow77",
+            "password": "31454fdf",
+            "balance": 1074.54
+        }, 
+        {
+            "id": 2,
+            "first_name": "Zbigniew",
+            "last_name": "Nowak",
+            "date_of_birth": "1975-08-22",
+            "PESEL": 75082209932,
+            "phone_no": "586-453-677",
+            "email": "znowak@onet.pl",
+            "address": {
+                "street": "ul. Kramarska 12a",
+                "zip_code": "27-600",
+                "city": "Sandomierz"
+            },
+            "login": "znow75!",
+            "password": "fgg5gdbsb",
+            "balance": 845.54
+        }, 
+        {
+            "id": 3,
+            "first_name": "Marcin",
+            "last_name": "Banaś",
+            "date_of_birth": "1981-12-03",
+            "PESEL": 81120301123,
+            "phone_no": "603-223-049",
+            "email": "mbanas@gmail.com",
+            "address": {
+                "street": "ul. Marynarska 333",
+                "zip_code": "39-432",
+                "city": "Gorzyce"
+            },
+            "login": "mban81$",
+            "password": "3243dfdcf$",
+            "balance": 663.98
+        }, 
+        {
+            "id": 4,
+            "first_name": "Damian",
+            "last_name": "Jaskuła",
+            "date_of_birth": "1969-10-03",
+            "PESEL": 69100390123,
+            "phone_no": "698-124-111",
+            "email": "djask@o2.pl",
+            "address": {
+                "street": "ul. Anonimowa 99",
+                "zip_code": "22-494",
+                "city": "Koniecświata"
+            },
+            "login": "djask69",
+            "password": "erp##fevv!",
+            "balance": 1092.42
+        }, 
+        {
+            "id": 5,
+            "first_name": "Adam",
+            "last_name": "Jagiełło",
+            "date_of_birth": "1977-06-21",
+            "PESEL": 77062115203,
+            "phone_no": "882-341-324",
+            "email": "ajag1@gmail.com",
+            "address": {
+                "street": "ul. Laskowa 1",
+                "zip_code": "33-444",
+                "city": "Puszczowo"
+            },
+            "login": "ajag77#",
+            "password": "efkrwherouty359",
+            "balance": 1503.89
+        }
+]

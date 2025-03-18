@@ -1,0 +1,35 @@
+.persInfo {
+  text-align: left;
+  padding: 5px;
+  margin: 5px;
+}
+
+.persInfo h2 {
+  text-align: center;
+  background-color: azure;
+  text-decoration: underline;
+}
+
+.navButton {
+  margin: 3px;
+}
+
+.navButton :hover {
+  background-color: lightgray;
+  border-radius: 3px;
+}
+
+.flightTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.flightTable td, th {
+  border: 1px solid darkgray;
+  padding: 8px;
+  text-align: left;
+}
+
+.flightTable th {
+  background-color: lightgray;
+}
