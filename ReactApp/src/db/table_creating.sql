@@ -83,7 +83,8 @@ CREATE TABLE flight (--table containing info about flights
 	task	TEXT NOT NULL, --type of task of the flight
 	exercise	INTEGER NOT NULL, 
 	training	INTEGER, --checkbox indicating if a flight is a training one or not
-	takeoff_type	TEXT NOT NULL,
+	takeoff_type	TEXT NOT NULL, 
+	date,	TEXT NOT NULL, -- date of when the flight took place
 	start_time	TEXT NOT NULL,
 	landing_time	TEXT NOT NULL,
 	airfield	TEXT NOT NULL,
