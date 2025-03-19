@@ -1,10 +1,10 @@
-INSERT INTO person (id, first_name, last_name, date_of_birth, PESEL, phone_no, email, address, winch_perm, login, password, admin_perm, timekeeper_perm, active, block_account, www_access, balance)
+INSERT INTO person (id, first_name, last_name, date_of_birth, PESEL, phone_no, email, address, login, password, admin_perm, timekeeper_perm, active, block_account, www_access, balance)
 VALUES 
-	(1, "Jan", "Kowalski", date("1977-04-03"), 77040359385, "554-245-236", "jkow@gmail.com", "ul. Lotnicza 5, 39-400, Tarnobrzeg", 1, "jkow77", "31454fdf", 0, 1, 1, 0, 1, 1074.54),
-	(2, "Zbigniew", "Nowak", date("1975-08-22"), 75082209932, "586-453-677", "znowak@onet.pl", "ul. Kramarska 12a, 27-600, Sandomierz", 1, "znow75!", "fgg5gdbsb", 1, 1, 1, 0, 1, 845.34),
-	(3, "Marcin", "Banaś", date("1981-12-03"), 81120301123, "603-223-049", "mbanas@gmail.com", "ul. Marynarska 333, 39-432, Gorzyce", 1, "mban81$", "3243dfdcf$", 0, 0, 1, 0, 0, 663.98),
-	(4, "Damian", "Jaskuła", date("1969-10-03"), 69100390123, "698-124-111", "djask@o2.pl", "ul. Anonimowa 99, 22-494, Koniecświata", 0, "djask69", "erp##fevv!", 0, 1, 1, 0, 1, 1092.42),
-	(5, "Adam", "Jagiełło", date("1977-06-21"), 77062115203, "882-341-324", "ajag1@gmail.com", "ul. Laskowa 1, 33-444, Puszczowo", 1, "ajag77#", "efkrwherouty359", 1, 1, 1, 0, 1, 1503.89);
+	(1, "Jan", "Kowalski", date("1977-04-03"), 77040359385, "554-245-236", "jkow@gmail.com", "ul. Lotnicza 5, 39-400, Tarnobrzeg", "jkow77", "31454fdf", 0, 1, 1, 0, 1, 1074.54),
+	(2, "Zbigniew", "Nowak", date("1975-08-22"), 75082209932, "586-453-677", "znowak@onet.pl", "ul. Kramarska 12a, 27-600, Sandomierz", "znow75!", "fgg5gdbsb", 1, 1, 1, 0, 1, 845.34),
+	(3, "Marcin", "Banaś", date("1981-12-03"), 81120301123, "603-223-049", "mbanas@gmail.com", "ul. Marynarska 333, 39-432, Gorzyce", "mban81$", "3243dfdcf$", 0, 0, 1, 0, 0, 663.98),
+	(4, "Damian", "Jaskuła", date("1969-10-03"), 69100390123, "698-124-111", "djask@o2.pl", "ul. Anonimowa 99, 22-494, Koniecświata", "djask69", "erp##fevv!", 0, 1, 1, 0, 1, 1092.42),
+	(5, "Adam", "Jagiełło", date("1977-06-21"), 77062115203, "882-341-324", "ajag1@gmail.com", "ul. Laskowa 1, 33-444, Puszczowo", "ajag77#", "efkrwherouty359", 1, 1, 1, 0, 1, 1503.89);
 
 INSERT INTO club (id, name, address, phone_no, email, website)
 VALUES 
