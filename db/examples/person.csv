@@ -1,9 +1,9 @@
 id,first_name,last_name,date_of_birth,pesel,phone_no,email,address,login,password,admin_perm,timekeeper_perm,active,block_account,www_access,balance
-1,"""Jan""","""Kowalski""",1977-04-03,"""77040359385""","""554-245-236""","""jkow@gmail.com""","""ul. Lotnicza 5, 39-400, Tarnobrzeg""","""jkow77""","""31454fdf""",false,true,true,false,true,1074.54
-2,"""Zbigniew""","""Nowak""",1975-08-22,"""75082209932""","""586-453-677""","""znowak@onet.pl""","""ul. Kramarska 12a, 27-600, Sandomierz""","""znow75!""","""fgg5gdbsb""",true,true,true,false,true,845.34
-3,"""Marcin""","""Banaś""",1981-12-03,"""81120301123""","""603-223-049""","""mbanas@gmail.com""","""ul. Marynarska 333, 39-432, Gorzyce""","""mban81$""","""3243dfdcf$""",false,false,true,false,false,663.98
-4,"""Damian""","""Jaskuła""",1969-10-03,"""69100390123""","""698-124-111""","""djask@o2.pl""","""ul. Anonimowa 99, 22-494, Koniecświata""","""djask69""","""erp##fevv!""",false,true,true,false,true,1092.42
-5,"""Adam""","""Jagiełło""",1977-06-21,"""77062115203""","""882-341-324""","""ajag1@gmail.com""","""ul. Laskowa 1, 33-444, Puszczowo""","""ajag77#""","""efkrwherouty359""",true,true,true,false,true,1503.89
-6,"""Filip""","""Lipski""",1976-12-23,"""76122341460""","""643-563-753""","""flip76@gmail.com""","""ul. Wiązowa 312, 00-123 Warszawa""","""filipski99""","""rit235tu230!""",false,false,false,true,false,1234.23
-7,"""Michał""","""Gołebiowski""",1968-07-07,"""68070714398""","""678-754-914""","""mgolab@wp.pl""","""ul. Bogaczy 2/123, 45-125 Poznań""","""golab68""","""13!@dfffw""",false,true,true,false,true,1454.14
-8,"""Zenon""","""Marczewski""",1971-08-28,"""71082848515""","""575-346-052""","""zmarc2@interia.pl""","""ul. 1 Maja 6/17, 39-400, Tarnobrzeg""","""zenmark1""","""15dfsA%$ll""",false,true,true,false,true,894.33
+1,Jan,Kowalski,1977-04-03,77040359385,554-245-236,jkow@gmail.com,"ul. Lotnicza 5, 39-400, Tarnobrzeg",jkow77,31454fdf,false,true,true,false,true,1074.54
+2,Zbigniew,Nowak,1975-08-22,75082209932,586-453-677,znowak@onet.pl,"ul. Kramarska 12a, 27-600, Sandomierz",znow75!,fgg5gdbsb,true,true,true,false,true,845.34
+3,Marcin,Banaś,1981-12-03,81120301123,603-223-049,mbanas@gmail.com,"ul. Marynarska 333, 39-432, Gorzyce",mban81$,3243dfdcf$,false,false,true,false,false,663.98
+4,Damian,Jaskuła,1969-10-03,69100390123,698-124-111,djask@o2.pl,"ul. Anonimowa 99, 22-494, Koniecświata",djask69,erp##fevv!,false,true,true,false,true,1092.42
+5,Adam,Jagiełło,1977-06-21,77062115203,882-341-324,ajag1@gmail.com,"ul. Laskowa 1, 33-444, Puszczowo",ajag77#,efkrwherouty359,true,true,true,false,true,1503.89
+6,Filip,Lipski,1976-12-23,76122341460,643-563-753,flip76@gmail.com,"ul. Wiązowa 312, 00-123 Warszawa",filipski99,rit235tu230!,false,false,false,true,false,1234.23
+7,Michał,Gołebiowski,1968-07-07,68070714398,678-754-914,mgolab@wp.pl,"ul. Bogaczy 2/123, 45-125 Poznań",golab68,13!@dfffw,false,true,true,false,true,1454.14
+8,Zenon,Marczewski,1971-08-28,71082848515,575-346-052,zmarc2@interia.pl,"ul. 1 Maja 6/17, 39-400, Tarnobrzeg",zenmark1,15dfsA%$ll,false,true,true,false,true,894.33
