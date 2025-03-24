@@ -18,7 +18,7 @@ const Personal = () => {
                                     <p><strong>Last name:</strong> {item.last_name}</p>
                                     <p><strong>Date of birth:</strong> {item.date_of_birth}</p>
                                 </div>
-                                <div title={"Contant info"} className={styles.persInfo}>
+                                <div title={"Contact info"} className={styles.persInfo}>
                                     <h2>Contact info</h2>
                                     <p><strong>Phone number:</strong> {item.phone_no}</p>
                                     <p><strong>E-mail:</strong> {item.email}</p>
