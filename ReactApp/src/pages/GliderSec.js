@@ -35,6 +35,7 @@ const GliderSect = () => {
                     <th>Exercise</th>
                     <th>Training</th>
                     <th>Takeoff Type</th>
+                    <th>Date</th>
                     <th>Start Time</th>
                     <th>Landing Time</th>
                     <th>Airfield</th>
@@ -57,6 +58,7 @@ const GliderSect = () => {
                                     <td>{item.exercise}</td>
                                     <td>{item.training}</td>
                                     <td>{item.takeoff_type}</td>
+                                    <td>{item.date}</td>
                                     <td>{item.start_time}</td>
                                     <td>{item.landing_time}</td>
                                     <td>{item.airfield}</td>
