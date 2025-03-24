@@ -1,0 +1,9 @@
+pilot_id,permission,hours_flown_total,hours_flown_alone,winch_perm
+1,glider flying permission,2345:23,2124:34,true
+2,glider flying permission,1234:34,1111:23,true
+3,glider flying permission,2341:23,1986:21,false
+4,glider flying permission,2841:11,2643:54,true
+5,glider flying permission,2132:11,2000:02,false
+6,glider flying permission,2753:34,2156:24,false
+7,glider flying permission,2123:11,1876:32,true
+8,glider flying permission,2546:24,1934:43,false
