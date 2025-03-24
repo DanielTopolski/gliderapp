@@ -4,7 +4,7 @@ import styles from "../App.module.css"
 
 
 const Flight = () => {
-    const data = useDB('flights');
+    const data = useDB('flight');
 
     return (
             <>
