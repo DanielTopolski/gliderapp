@@ -4,11 +4,12 @@ import styles from "../App.module.css"
 
 
 const Personal = () => {
-    const data = useDB('pilot');
-
+    const data = useDB('person');
+    console.log(data);
     return (
             <>
                 <h1>Detailed info about the pilot</h1>
+                <hr />
                 {data && data.map((item) => {
                         return (
                             <>
@@ -25,13 +26,14 @@ const Personal = () => {
                                 </div>
                                 <div title={"Address info"} className={styles.persInfo}>
                                     <h2>Address info</h2>
-                                    <p><strong>Street:</strong> {item.address.street}</p>
-                                    <p><strong>Zip code:</strong> {item.address.zip_code}</p>
-                                    <p><strong>City:</strong> {item.address.city}</p>
+                                    <p><strong>Street:</strong> {item.address_street}</p>
+                                    <p><strong>Zip code:</strong> {item.address_zipcode}</p>
+                                    <p><strong>City:</strong> {item.address_city}</p>
                                 </div>
                                 <div title={"Address info"} className={styles.persInfo}>
                                     <h2>Additional info</h2>
                                     <p>{item.remarks}</p>
+                                    <hr />
                                 </div>
                             </>
                         );
