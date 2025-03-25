@@ -13,11 +13,12 @@ const GliderSect = () => {
             <hr />
             <h2>Pilot data</h2>
             {docs_data && docs_data.map((item) => {
-                      return (
+                      console.log(docs_data);return (
                             <div title={"Glider section data"} className={styles.persInfo} key={item.pilot_id}>
                                 <p><strong>Permission name:</strong> {item.permission}</p>
                                 <p><strong>Total amount of hours flown:</strong> {item.hours_flown_total}</p>
                                 <p><strong>Total amount of hours flown alone:</strong> {item.hours_flown_alone}</p>
+                                <p><strong>Winch permission: {item.winch_perm}</strong></p>
                             </div>
                       );
                   }
