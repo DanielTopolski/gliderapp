@@ -4,8 +4,8 @@ import styles from "../App.module.css"
 
 
 const GliderSect = () => {
-    const flight_data = useDB('flight');
-    const docs_data = useDB('pilot_glider');
+    const flight_data = useDB('flight','pilot_id',1);
+    const docs_data = useDB('pilot_glider','pilot_id',1);
 
     return (
         <>
@@ -13,7 +13,6 @@ const GliderSect = () => {
             <hr />
             <h2>Pilot data</h2>
             {docs_data && docs_data.map((item) => {
-                  if (item.pilot_id===1) {
                       return (
                             <div title={"Glider section data"} className={styles.persInfo} key={item.pilot_id}>
                                 <p><strong>Permission name:</strong> {item.permission}</p>
@@ -21,7 +20,7 @@ const GliderSect = () => {
                                 <p><strong>Total amount of hours flown alone:</strong> {item.hours_flown_alone}</p>
                             </div>
                       );
-                  }}
+                  }
                 )}
             <hr />
             <h2>Flight list</h2>
@@ -47,7 +46,6 @@ const GliderSect = () => {
                     <th>Remarks</th>
                 </tr>
                 {flight_data && flight_data.map((item) => {
-                    if (item.pilot_id===1) {
                         return ( 
                                 <tr key={item.id}>
                                     <td>{item.id}</td>
@@ -69,7 +67,7 @@ const GliderSect = () => {
                                     <td>{item.timekeeper}</td>
                                     <td>{item.remarks}</td>
                                 </tr>
-                        );}
+                        );
                     })
                 }
                 </table>
