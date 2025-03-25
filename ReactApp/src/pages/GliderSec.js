@@ -39,10 +39,10 @@ const GliderSect = () => {
                     <th>Start Time</th>
                     <th>Landing Time</th>
                     <th>Airfield</th>
-                    <th>-</th>
-                    <th>-</th>
-                    <th>-</th>
-                    <th>-</th>
+                    <th>Tow plane or winch operator ID</th>
+                    <th>Tow plane ID</th>
+                    <th>Tow plane time of flight</th>
+                    <th>Tow plane time on ground</th>
                     <th>Timekeeper</th>
                     <th>Remarks</th>
                 </tr>
@@ -61,10 +61,10 @@ const GliderSect = () => {
                                     <td>{item.start_time}</td>
                                     <td>{item.landing_time}</td>
                                     <td>{item.airfield}</td>
-                                    <td>-</td>
-                                    <td>-</td>
-                                    <td>-</td>
-                                    <td>-</td>
+                                    <td>{item.tow_plane_pilot_or_winch_operator_id}</td>
+                                    <td>{item.tow_plane_id}</td>
+                                    <td>{item.tow_plane_time_of_flight}</td>
+                                    <td>{item.tow_plane_time_on_ground}</td>
                                     <td>{item.timekeeper}</td>
                                     <td>{item.remarks}</td>
                                 </tr>
