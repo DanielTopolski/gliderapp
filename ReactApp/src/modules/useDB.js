@@ -13,7 +13,10 @@ export default function useDB(tableName, col_name, val) {
     },[] );
 
     async function getDBData() {
-      const { data } = await supabase.from(tableName).select().eq(col_name,val);
+      const { data } = await supabase
+        .from(tableName)
+        .select()
+        .eq(col_name,val);
       setData(data);
     }
 
