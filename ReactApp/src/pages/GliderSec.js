@@ -4,12 +4,12 @@ import styles from "../App.module.css"
 
 
 const GliderSec = () => {
-    const flight_data = useDB('detailed_flight_list',null,'and(aircraft_kind.eq.glider,or(pilot_id.eq.1,exercise.eq.2))');
+    const flight_data = useDB('detailed_flight_list',null,'and(aircraft_kind.eq.glider,or(pilot_id.eq.1,instructor_passenger_id.eq.1))');
     const docs_data = useDB('pilot_glider',null,'pilot_id.eq.1');
 
     return (
         <>
-            <h1>Glider Section</h1>
+            <h1>Glider section</h1>
             <hr />
             <h2>Pilot data</h2>
             {docs_data && docs_data.map((item) => {

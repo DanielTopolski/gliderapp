@@ -6,7 +6,7 @@ import styles from "../App.module.css"
 const Personal = () => {
     const data = useDB('person',null,'id.eq.1');
     const docs_data = useDB('document_pilot',null,'pilot_id.eq.1');
-    
+
     return (
             <>
                 <h1>Detailed info about the pilot</h1>
@@ -14,7 +14,7 @@ const Personal = () => {
                 {data && data.map((item) => {
                         return (
                             <>
-                                <div title={"Personal info"} className={styles.persInfo} >
+                                <div title={"Personal info"} className={styles.persInfo}>
                                     <h2>Personal info</h2>
                                     <p><strong>First name:</strong> {item.first_name}</p>
                                     <p><strong>Last name:</strong> {item.last_name}</p>
@@ -45,7 +45,7 @@ const Personal = () => {
                                     if (item.type==='medical examination')    {
                                         return (
                                             <>
-                                                <div title={"Documents info"} className={styles.persInfo} key={item.id}>
+                                                <div title={"Documents info"} className={styles.persInfo} key={item.pilot_id}>
                                                     <p><strong>Document type: </strong>{item.type}</p>
                                                     <p><strong>Document number: </strong>{item.doc_no}</p>
                                                     <p><strong>Valid till: </strong>{item.valid_till}</p>
