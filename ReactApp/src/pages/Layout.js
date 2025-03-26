@@ -11,6 +11,9 @@ const Layout = () => {
                         <Link to="/personal" className={styles.navButton}>
                             <button>Personal Info</button>
                         </Link>
+                        <Link to="/documents" className={styles.navButton}>
+                            <button>Documents</button>
+                        </Link>
                         <Link to="/glidersec" className={styles.navButton}>
                             <button>Glider Section</button>
                         </Link>

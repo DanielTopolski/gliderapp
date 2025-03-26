@@ -5,6 +5,7 @@ import Layout from "./pages/Layout";
 import Login from "./pages/Login";
 import Home from "./pages/Home";
 import Personal from "./pages/Personal";
+import Documents from "./pages/Documents";
 import AccBalance from "./pages/AccBalance";
 import GliderSec from "./pages/GliderSec";
 import AirplaneSec from "./pages/AirplaneSec";
@@ -22,6 +23,7 @@ export default function App() {
                     <Route index element={<Login />} />
                     <Route path="home" element={<Home />} />
                     <Route path="personal" element={<Personal />} />
+                    <Route path="documents" element={<Documents />} />
                     <Route path="glidersec" element={<GliderSec />} />
                     <Route path="airplanesec" element={<AirplaneSec />} />
                     <Route path="accbalance" element={<AccBalance />} />
