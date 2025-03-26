@@ -55,8 +55,8 @@ const Timekeeper = () => {
                             );
                         })
                     }   
-                        </tbody>
-                    </table>
+                    </tbody>
+                </table>
             </>
         );
 };
