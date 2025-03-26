@@ -11,6 +11,7 @@
     "bcrypt": "^5.1.1",
     "bcryptjs-react": "^2.4.6",
     "better-sqlite3": "^11.8.1",
+    "primereact": "^10.9.3",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-scripts": "5.0.1",
