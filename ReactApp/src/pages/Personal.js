@@ -4,7 +4,7 @@ import styles from "../App.module.css"
 
 
 const Personal = () => {
-    const data = useDB('person','id',1);
+    const data = useDB('person',null,'id',1);
     console.log(data);
     return (
             <>

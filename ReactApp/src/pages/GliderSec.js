@@ -1,11 +1,11 @@
 import React from "react"
-import useDB from "../modules/useDB"
+import useDB, { useDBor } from "../modules/useDB"
 import styles from "../App.module.css"
 
 
 const GliderSect = () => {
-    const flight_data = useDB('detailed_flight_list','pilot_id',1);
-    const docs_data = useDB('pilot_glider','pilot_id',1);
+    const flight_data = useDBor('detailed_flight_list',null,'pilot_id.eq.1,exercise.eq.2');
+    const docs_data = useDB('pilot_glider',null,'pilot_id',1);
 
     return (
         <>
