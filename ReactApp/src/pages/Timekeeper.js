@@ -2,7 +2,6 @@ import React from "react"
 import useDB from "../modules/useDB"
 import styles from "../App.module.css"
 
-
 const Timekeeper = () => {
     const flight_data = useDB('detailed_flight_list',null,'timekeeper_id.eq.1');
     
