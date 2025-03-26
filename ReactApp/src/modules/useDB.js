@@ -25,39 +25,39 @@ export default function useDB(tableName, col_names, name, val) {
 }
 
 export function useDBor(tableName, col_names, conditions) {
-  const [data, setData] = useState(null);
+    const [data, setData] = useState(null);
 
-  useEffect(() => {
-    getDBData();
-  },[] );
+    useEffect(() => {
+      getDBData();
+    },[] );
 
-  async function getDBData() {
-    const { data } = await supabase
-      .from(tableName)
-      .select(col_names)
-      .or(conditions);
+    async function getDBData() {
+      const { data } = await supabase
+        .from(tableName)
+        .select(col_names)
+        .or(conditions);
 
-    setData(data);
-  }
+      setData(data);
+    }
 
-  return data;
+    return data;
 }
 
 export function useDBand(tableName, col_names, conditions) {
-  const [data, setData] = useState(null);
+    const [data, setData] = useState(null);
 
-  useEffect(() => {
-    getDBData();
-  },[] );
+    useEffect(() => {
+      getDBData();
+    },[] );
 
-  async function getDBData() {
-    const { data } = await supabase
-      .from(tableName)
-      .select(col_names)
-      .and(conditions);
+    async function getDBData() {
+      const { data } = await supabase
+        .from(tableName)
+        .select(col_names)
+        .and(conditions);
 
-    setData(data);
-  }
+      setData(data);
+    }
 
-  return data;
+    return data;
 }

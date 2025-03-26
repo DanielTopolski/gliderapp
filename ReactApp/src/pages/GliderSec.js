@@ -4,7 +4,7 @@ import styles from "../App.module.css"
 
 
 const GliderSect = () => {
-    const flight_data = useDBor('detailed_flight_list',null,'pilot_id.eq.1,exercise.eq.2');
+    const flight_data = useDBor('detailed_flight_list',null,'pilot_id.eq.1,instructor_passenger_id.eq.1');
     const docs_data = useDB('pilot_glider',null,'pilot_id',1);
 
     return (
