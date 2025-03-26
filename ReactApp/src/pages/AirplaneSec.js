@@ -26,6 +26,7 @@ const AirplaneSec = () => {
             <hr />
             <h2>Flight list</h2>
             <table className={styles.flightTable}>
+                <tbody>
                 <tr>
                     <th>Flight number</th>
                     <th>Pilot's name</th>
@@ -67,6 +68,7 @@ const AirplaneSec = () => {
                         );
                     })
                 }
+                </tbody>
                 </table>
         </>
     );

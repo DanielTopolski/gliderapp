@@ -1,6 +1,8 @@
 import React from "react"
 import useDB from "../modules/useDB"
 import styles from "../App.module.css"
+import { DataTable } from 'primereact/datatable';
+import { Column } from 'primereact/column';
 
 const Timekeeper = () => {
     const flight_data = useDB('detailed_flight_list',null,'timekeeper_id.eq.1');
@@ -11,24 +13,25 @@ const Timekeeper = () => {
                 <hr />
                 <h2>Timekeeper's flight list</h2>
                 <table className={styles.flightTable}>
-                    <tr>
-                        <th>Flight number</th>
-                        <th>Pilot's name</th>
-                        <th>Instructor/Passenger name</th>
-                        <th>Aircraft</th>
-                        <th>Task</th>
-                        <th>Exercise</th>
-                        <th>Takeoff type</th>
-                        <th>Start Time</th>
-                        <th>Landing Time</th>
-                        <th>Airfield</th>
-                        <th>Tow plane or winch operator name</th>
-                        <th>Tow plane</th>
-                        <th>Tow plane time of flight</th>
-                        <th>Tow plane time on ground</th>
-                        <th>Timekeeper</th>
-                        <th>Remarks</th>
-                    </tr>
+                    <tbody>
+                        <tr>
+                            <th>Flight number</th>
+                            <th>Pilot's name</th>
+                            <th>Instructor/Passenger name</th>
+                            <th>Aircraft</th>
+                            <th>Task</th>
+                            <th>Exercise</th>
+                            <th>Takeoff type</th>
+                            <th>Start Time</th>
+                            <th>Landing Time</th>
+                            <th>Airfield</th>
+                            <th>Tow plane or winch operator name</th>
+                            <th>Tow plane</th>
+                            <th>Tow plane time of flight</th>
+                            <th>Tow plane time on ground</th>
+                            <th>Timekeeper</th>
+                            <th>Remarks</th>
+                        </tr>
                     {flight_data && flight_data.map((item) => {
                             return ( 
                                     <tr key={item.id}>
@@ -51,7 +54,8 @@ const Timekeeper = () => {
                                     </tr>
                             );
                         })
-                    }
+                    }   
+                        </tbody>
                     </table>
             </>
         );
