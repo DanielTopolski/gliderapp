@@ -1,11 +1,11 @@
 import React from "react"
-import useDB, { useDBor } from "../modules/useDB"
+import useDB from "../modules/useDB"
 import styles from "../App.module.css"
 
 
-const GliderSect = () => {
-    const flight_data = useDBor('detailed_flight_list',null,'pilot_id.eq.1,instructor_passenger_id.eq.1');
-    const docs_data = useDB('pilot_glider',null,'pilot_id',1);
+const GliderSec = () => {
+    const flight_data = useDB('detailed_flight_list',null,'and(aircraft_kind.eq.glider,or(pilot_id.eq.1,exercise.eq.2))');
+    const docs_data = useDB('pilot_glider',null,'pilot_id.eq.1');
 
     return (
         <>
@@ -61,7 +61,7 @@ const GliderSect = () => {
                                     <td>{item.tp_id}</td>
                                     <td>{item.tp_time_of_flight}</td>
                                     <td>{item.tp_time_on_ground}</td>
-                                    <td>{item.timekeeper}</td>
+                                    <td>{item.timekeeper_name}</td>
                                     <td>{item.remarks}</td>
                                 </tr>
                         );
@@ -72,4 +72,4 @@ const GliderSect = () => {
     );
 };
 
-export default GliderSect;
+export default GliderSec;
