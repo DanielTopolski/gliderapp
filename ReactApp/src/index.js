@@ -10,6 +10,7 @@ import GliderSec from "./pages/GliderSec";
 import AirplaneSec from "./pages/AirplaneSec";
 import Timekeeper from "./pages/Timekeeper";
 import NoPage from "./pages/NoPage";
+import "primereact/resources/themes/lara-light-cyan/theme.css";
 
 
 export default function App() {

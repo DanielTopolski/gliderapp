@@ -1,6 +1,9 @@
 import React from "react"
 import useDB from "../modules/useDB"
 import styles from "../App.module.css"
+import { DataTable } from 'primereact/datatable';
+import { Column } from 'primereact/column';
+import "primereact/resources/themes/nano/theme.css";
 
 
 const AirplaneSec = () => {
@@ -10,6 +13,27 @@ const AirplaneSec = () => {
     return (
         <>
             <h1>Airplane Section</h1>
+            <hr />
+            <h2>Flight list</h2>
+            <div className="card">  
+                    <DataTable value={flight_data} columnResizeMode="expand" resizableColumns showGridlines scrollable scrollHeight="400px">
+                        <Column field="flight_number" header="Flight no" style={{ minWidth: '100px' }}></Column>
+                        <Column field="instructor_passenger_name" header="Instructor/passenger" style={{ minWidth: '100px' }}></Column>
+                        <Column field="aircraft" header="Aircraft" style={{ minWidth: '100px' }}></Column>
+                        <Column field="task" header="Task" style={{ minWidth: '50px' }}></Column>
+                        <Column field="exercise" header="Exercise" style={{ minWidth: '50px' }}></Column>
+                        <Column field="takeoff_type" header="Takeoff type" style={{ minWidth: '100px' }}></Column>
+                        <Column field="flight_start_time" header="Flight start time" style={{ minWidth: '100px' }}></Column>
+                        <Column field="flight_landing_time" header="Flight landing time" style={{ minWidth: '100px' }}></Column>
+                        <Column field="airfield" header="Airfield" style={{ minWidth: '100px' }}></Column>
+                        <Column field="tp_or_winch_op_name" header="Tow plane/winch operator name" style={{ minWidth: '100px' }}></Column>
+                        <Column field="tow_plane" header="Tow plane" style={{ minWidth: '100px' }}></Column>
+                        <Column field="tp_time_of_flight" header="Tow plane time of flight" style={{ minWidth: '100px' }}></Column>
+                        <Column field="tp_time_on_ground" header="Tow plane time on ground" style={{ minWidth: '100px' }}></Column>
+                        <Column field="timekeeper" header="Timekeeper" style={{ minWidth: '100px' }}></Column>
+                        <Column field="remarks" header="Remarks" style={{ minWidth: '100px' }}></Column>
+                    </DataTable>
+            </div>
             <hr />
             <h2>Pilot data</h2>
             {docs_data && docs_data.map((item) => {
@@ -22,54 +46,7 @@ const AirplaneSec = () => {
                             </div>
                       );
                   }
-                )}
-            <hr />
-            <h2>Flight list</h2>
-            <table className={styles.flightTable}>
-                <tbody>
-                <tr>
-                    <th>Flight number</th>
-                    <th>Pilot's name</th>
-                    <th>Instructor/Passenger name</th>
-                    <th>Aircraft</th>
-                    <th>Task</th>
-                    <th>Exercise</th>
-                    <th>Takeoff type</th>
-                    <th>Start Time</th>
-                    <th>Landing Time</th>
-                    <th>Airfield</th>
-                    <th>Tow plane or winch operator name</th>
-                    <th>Tow plane</th>
-                    <th>Tow plane time of flight</th>
-                    <th>Tow plane time on ground</th>
-                    <th>Timekeeper</th>
-                    <th>Remarks</th>
-                </tr>
-                {flight_data && flight_data.map((item) => {
-                        return ( 
-                                <tr key={item.id}>
-                                    <td>{item.flight_number}</td>
-                                    <td>{item.pilot_name}</td>
-                                    <td>{item.instructor_passenger_name}</td>
-                                    <td>{item.aircraft}</td>
-                                    <td>{item.task}</td>
-                                    <td>{item.exercise}</td>
-                                    <td>{item.takeoff_type}</td>
-                                    <td>{item.flight_start_time}</td>
-                                    <td>{item.flight_landing_time}</td>
-                                    <td>{item.airfield}</td>
-                                    <td>{item.tp_or_winch_op_name}</td>
-                                    <td>{item.tp_id}</td>
-                                    <td>{item.tp_time_of_flight}</td>
-                                    <td>{item.tp_time_on_ground}</td>
-                                    <td>{item.timekeeper}</td>
-                                    <td>{item.remarks}</td>
-                                </tr>
-                        );
-                    })
-                }
-                </tbody>
-                </table>
+                )} 
         </>
     );
 };

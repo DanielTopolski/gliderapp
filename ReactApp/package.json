@@ -11,9 +11,12 @@
     "bcrypt": "^5.1.1",
     "bcryptjs-react": "^2.4.6",
     "better-sqlite3": "^11.8.1",
+    "i18next": "^24.2.3",
+    "i18next-browser-languagedetector": "^8.0.4",
     "primereact": "^10.9.3",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "react-i18next": "^15.4.1",
     "react-scripts": "5.0.1",
     "sqlite3": "^5.1.7",
     "web-vitals": "^2.1.4"
