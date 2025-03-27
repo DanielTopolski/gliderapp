@@ -33,3 +33,8 @@
 .flightTable th {
   background-color: lightgray;
 }
+
+.trans {
+  text-align: right;
+  padding-bottom: 10px;
+}

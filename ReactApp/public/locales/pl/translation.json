@@ -1,0 +1,79 @@
+{
+    "layout": {
+        "start": "Strona główna",
+        "persinfo": "Informacje osobiste",
+        "glidersec": "Sekcja szybowcowa",
+        "airplanesec": "Sekcja samolotowa",
+        "accountbal": "Stan konta",
+        "tkeeper": "Chronometrażysta",
+        "signout": "Wyloguj"
+    },
+    "home": {
+        "main": "To jest strona główna.",
+        "header": "Proszę wybrać jedną z powyższych opcji, aby wyświetlić dane."
+    },
+    "personal": {
+        "info_header": "Szczegółowe informacje o pilocie",
+        "docs_header": "Dokumenty pilota",
+        "pers_head": "Informacje personalne",
+        "pname": "Imię: ",
+        "psurname": "Nazwisko: ",
+        "pdob": "Data urodzenia: ",
+        "cont_head": "Informacje kontaktowe",
+        "pphone": "Numer telefonu: ",
+        "address_head": "Informacje adresowe",
+        "pstreet": "Ulica: ",
+        "pcity": "Miasto: ",
+        "pzip": "Kod pocztowy",
+        "addinfo_head": "Informacje dodatkowe",
+        "doctype": "Typ dokumentu: ",
+        "docno": "Numer dokumentu: ",
+        "valdate": "Ważny do: ",
+        "class": "Klasa: "
+    },
+    "login": {
+        "main": "To jest strona logowania.",
+        "head": "Zaloguj się, aby przejść dalej:",
+        "skip": "Pomiń",
+        "usr": "Wprowadź nazwę użytkownika:",
+        "pswd": "Wprowadź swoje hasło:",
+        "sub": "Prześlij"
+    },
+    "glider": {
+        "header": "Sekcja szybowcowa",
+        "flight_head": "Lista lotów",
+        "pdata_head": "Dane pilota",
+        "permname": "Nazwa zezwolenia: ",
+        "totalhours": "Nalot całkowity: ",
+        "totalalone": "Nalot samodzielny: ",
+        "winch": "Pozwolenie na start z wyciągarką: "
+    },
+    "glider_list": {
+        "flightno": "Numer lotu",
+        "instr": "Instruktor/pasażer",
+        "aircraft": "Szybowiec",
+        "task": "Zadanie",
+        "exer": "Ćwiczenie",
+        "takeoff": "Typ startu",
+        "fl_start": "Godzina startu",
+        "fl_end": "Godzina lądowania",
+        "arfield": "Lotnisko",
+        "tp_w_op": "Pilot holówki/operator wyciągarki",
+        "tp": "Holówka",
+        "tp_fltime": "Czas lotu holówki",
+        "tp_groundtime": "Czas holówki na ziemi",
+        "tkeep": "Chronometrażysta",
+        "rem": "Uwagi"
+    },
+    "airplane": {
+        "header": "Sekcja samolotowa",
+        "flight_head": "Lista lotów",
+        "pdata_head": "Dane pilota",
+        "permname": "Nazwa zezwolenia: ",
+        "totalhours": "Nalot całkowity: ",
+        "totalalone": "Nalot samodzielny: "
+    },
+    "account": {
+        "header": "Stan konta"
+    }
+}

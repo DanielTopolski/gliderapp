@@ -1,31 +1,47 @@
 import { Outlet, Link } from "react-router-dom";
-import styles from "../App.module.css"
+import styles from "../App.module.css";
+import { useTranslation } from 'react-i18next';
 
+
+const lngs = {
+    pl: { nativeName: 'Polski' },
+    en: { nativeName: 'English' } 
+};
+  
 
 const Layout = () => {
+    const { t, i18n } = useTranslation();
+
     return (
         <>
+            <div className={styles.trans}>
+                {Object.keys(lngs).map((lng) => (
+                <button key={lng} className={styles.navButton} style={{ fontWeight: i18n.resolvedLanguage === lng ? 'bold' : 'normal' }} type="submit" onClick={() => i18n.changeLanguage(lng)}>
+                    {lngs[lng].nativeName}
+                </button>
+                ))}
+            </div>
             <nav>
                         <Link to="/home" className={styles.navButton}>
-                            <button>Home</button>
+                            <button>{t('layout.start')}</button>
                         </Link>
                         <Link to="/personal" className={styles.navButton}>
-                            <button>Personal Info</button>
+                            <button>{t('layout.persinfo')}</button>
                         </Link>
                         <Link to="/glidersec" className={styles.navButton}>
-                            <button>Glider Section</button>
+                            <button>{t('layout.glidersec')}</button>
                         </Link>
                         <Link to="/airplanesec" className={styles.navButton}>
-                            <button>Airplane section</button>
+                            <button>{t('layout.airplanesec')}</button>
                         </Link>
                         <Link to="/accbalance" className={styles.navButton}>
-                            <button>Account balance</button>
+                            <button>{t('layout.accountbal')}</button>
                         </Link>
                         <Link to="/timekeeper" className={styles.navButton}>
-                            <button>Timekeeper</button>
+                            <button>{t('layout.tkeeper')}</button>
                         </Link>
                         <Link to="/" className={styles.navButton}>
-                            <button>Sign out</button>
+                            <button>{t('layout.signout')}</button>
                         </Link>
             </nav>
 

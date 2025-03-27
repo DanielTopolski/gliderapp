@@ -1,0 +1,95 @@
+{
+    "layout": {
+        "start": "Home",
+        "persinfo": "Personal info",
+        "glidersec": "Glider section",
+        "airplanesec": "Airplane section",
+        "accountbal": "Account balance",
+        "tkeeper": "Timekeeper",
+        "signout": "Sign out"
+    },
+    "home": {
+        "main": "This is the main page.",
+        "header": "Please choose one of the above to view requested data."
+    },
+    "personal": {
+        "info_header": "Detailed info about the pilot",
+        "docs_header": "Pilot's documents",
+        "pers_head": "Personal info",
+        "pname": "First name: ",
+        "psurname": "Last name: ",
+        "pdob": "Date of birth: ",
+        "cont_head": "Contact info",
+        "pphone": "Phone number: ",
+        "address_head": "Address info",
+        "pstreet": "Street: ",
+        "pcity": "City: ",
+        "pzip": "Zip code",
+        "addinfo_head": "Additional info",
+        "doctype": "Document type: ",
+        "docno": "Document number: ",
+        "valdate": "Valid till: ",
+        "class": "Class: "
+    },
+    "login": {
+        "main": "This is the login page.",
+        "head": "To go any further, please sign in:",
+        "skip": "Skip login",
+        "usr": "Enter your username:",
+        "pswd": "Enter your password:",
+        "sub": "Submit"
+    },
+    "glider": {
+        "header": "Glider section",
+        "flight_head": "Flight list",
+        "pdata_head": "Pilot data",
+        "permname": "Permission name: ",
+        "totalhours": "Total amount of hours flown: ",
+        "totalalone": "Total amount of hours flown alone: ",
+        "winch": "Winch permission: "
+    },
+    "glider_list": {
+        "flighno": "Flight number",
+        "instr": "Instructor/passenger",
+        "aircraft": "Glider",
+        "task": "Task",
+        "exer": "Exercise",
+        "takeoff": "Takeoff type",
+        "fl_start": "Flight start time",
+        "fl_end": "Flight end time",
+        "arfield": "Airfield",
+        "tp_w_op": "Tow plane/winch operator name",
+        "tp": "Tow plane",
+        "tp_fltime": "Tow plane time of flight",
+        "tp_groundtime": "Tow plane time on ground",
+        "tkeep": "Timekeeper",
+        "rem": "Remarks"
+    },
+    "airplane": {
+        "header": "Airplane section",
+        "flight_head": "Flight list",
+        "pdata_head": "Pilot data",
+        "permname": "Permission name: ",
+        "totalhours": "Total amount of hours flown: ",
+        "totalalone": "Total amount of hours flown alone: "
+    },
+    "airplane_list": {
+        "flighno": "Flight number",
+        "instr": "Instructor/passenger",
+        "aircraft": "Airplane",
+        "task": "Task",
+        "exer": "Exercise",
+        "fl_start": "Flight start time",
+        "fl_end": "Flight end time",
+        "arfield": "Airfield",
+        "tp_w_op": "Tow plane/winch operator name",
+        "tp": "Tow plane",
+        "tp_fltime": "Tow plane time of flight",
+        "tp_groundtime": "Tow plane time on ground",
+        "tkeep": "Timekeeper",
+        "rem": "Remarks"
+    },
+    "account": {
+        "header": "Account balance"
+    }
+}

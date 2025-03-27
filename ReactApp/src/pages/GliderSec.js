@@ -3,21 +3,23 @@ import useDB from "../modules/useDB"
 import styles from "../App.module.css"
 import { DataTable } from 'primereact/datatable';
 import { Column } from 'primereact/column';
-//import "primereact/resources/themes/nano/theme.css";
+import { useTranslation } from 'react-i18next';
 
 
 const GliderSec = () => {
+    const { t } = useTranslation();
+
     const flight_data = useDB('detailed_flight_list',null,'and(aircraft_kind.eq.glider,or(pilot_id.eq.1,instructor_passenger_id.eq.1))');
     const docs_data = useDB('pilot_glider',null,'pilot_id.eq.1');
 
     return (
         <>
-            <h1>Glider section</h1>
+            <h1>{t('glider.header')}</h1>
             <hr />
             <div className="card">
-            <h2>Flight list</h2>
+            <h2>{t('glider.flight_head')}</h2>
                     <DataTable value={flight_data} columnResizeMode="expand" resizableColumns showGridlines scrollable scrollHeight="400px">
-                        <Column field="flight_number" header="Flight no" style={{ minWidth: '100px' }}></Column>
+                        <Column field="flight_number" header={t('glider_list.flightno')} style={{ minWidth: '100px' }}></Column>
                         <Column field="instructor_passenger_name" header="Instructor/passenger" style={{ minWidth: '100px' }}></Column>
                         <Column field="aircraft" header="Aircraft" style={{ minWidth: '100px' }}></Column>
                         <Column field="task" header="Task" style={{ minWidth: '50px' }}></Column>
@@ -34,14 +36,14 @@ const GliderSec = () => {
                         <Column field="remarks" header="Remarks" style={{ minWidth: '100px' }}></Column>
                     </DataTable>
             </div>
-            <h2>Pilot data</h2>
+            <h2>{t('glider.pdata_head')}</h2>
             {docs_data && docs_data.map((item) => {
                       return (
                             <div title={"Glider section data"} className={styles.persInfo} key={item.pilot_id}>
-                                <p><strong>Permission name:</strong> {item.permission}</p>
-                                <p><strong>Total amount of hours flown:</strong> {item.hours_flown_total}</p>
-                                <p><strong>Total amount of hours flown alone:</strong> {item.hours_flown_alone}</p>
-                                <p><strong>Winch permission: {item.winch_perm}</strong></p>
+                                <p><strong>{t('glider.permname')}</strong> {item.permission}</p>
+                                <p><strong>{t('glider.totalhours')}</strong> {item.hours_flown_total}</p>
+                                <p><strong>{t('glider.totalalone')}</strong> {item.hours_flown_alone}</p>
+                                <p><strong>{t('glider.winch')}{item.winch_perm}</strong></p>
                             </div>
                       );
                   }

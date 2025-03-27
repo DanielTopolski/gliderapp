@@ -1,5 +1,15 @@
 import { useState} from "react";
 import { Link, useNavigate } from "react-router-dom";
+import styles from "../App.module.css";
+import { useTranslation } from 'react-i18next';
+
+
+const lngs = {
+    pl: { nativeName: 'Polski' },
+    en: { nativeName: 'English' } 
+};
+  
+
 //import bcrypt from "bcryptjs-react";
 
 //const salt = bcrypt.genSaltSync(10);
@@ -7,6 +17,7 @@ import { Link, useNavigate } from "react-router-dom";
 export default function LoginForm() {
     const [inputs, setInputs] = useState({});
     
+    const { t, i18n } = useTranslation();
     const login = 'jkow77';
     const password ='31454fdf';
     const navigate = useNavigate();
@@ -47,15 +58,22 @@ export default function LoginForm() {
 
     return (
         <>
-            <h1>This is the "login" page.</h1>
-            <h2>To go any further, please sign in:</h2>
+            <div className={styles.trans}>
+                {Object.keys(lngs).map((lng) => (
+                <button key={lng} className={styles.navButton} style={{ fontWeight: i18n.resolvedLanguage === lng ? 'bold' : 'normal' }} type="submit" onClick={() => i18n.changeLanguage(lng)}>
+                    {lngs[lng].nativeName}
+                </button>
+                ))}
+            </div>
+            <h1>{t('login.main')}</h1>
+            <h2>{t('login.head')}</h2>
             <div style={{textAlign: "center", margin: "auto"}}>
                 <Link to="/home">
-                    <button>Skip login</button>
+                    <button>{t('login.skip')}</button>
                 </Link>
                 <form onSubmit={handleSubmit}>
                     <p>
-                        <label htmlFor="usr">Enter your username: <br />
+                        <label htmlFor="usr">{t('login.usr')}<br />
                             <input
                                 type="text"
                                 name="usr"
@@ -67,7 +85,7 @@ export default function LoginForm() {
                         </label>
                     </p>
                     <p>
-                        <label htmlFor="pwd">Enter your password: <br />
+                        <label htmlFor="pwd">{t('login.pswd')}<br />
                             <input
                                 type="password"
                                 name="pwd"
@@ -81,7 +99,7 @@ export default function LoginForm() {
                     <p>
                         <label htmlFor="sub">
                             <input
-                                type="submit" value={"Submit"}
+                                type="submit" value={t('login.sub')}
                             />
                         </label>
                     </p>

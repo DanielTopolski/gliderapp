@@ -1,5 +1,10 @@
+import { useTranslation } from 'react-i18next';
+
+
 const AccBalance = () => {
-    return <h1>Account Balance</h1>;
+    const { t } = useTranslation();
+
+    return <h1>{t('account.header')}</h1>;
 };
 
 export default AccBalance;
