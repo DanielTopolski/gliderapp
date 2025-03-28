@@ -30,7 +30,7 @@ const Layout = () => {
                         </Link>
                         <Link to="/glidersec" className={styles.navButton}>
                             <button>{t('layout.glidersec')}</button>
-                        </Link>
+                       </Link>
                         <Link to="/airplanesec" className={styles.navButton}>
                             <button>{t('layout.airplanesec')}</button>
                         </Link>

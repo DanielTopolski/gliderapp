@@ -48,16 +48,20 @@
         "totalalone": "Total amount of hours flown alone: ",
         "winch": "Winch permission: "
     },
-    "glider_list": {
-        "flighno": "Flight number",
+    "flight_list": {
+        "flightno": "Flight number",
+        "pilot": "Pilot",
         "instr": "Instructor/passenger",
-        "aircraft": "Glider",
+        "air_kind": "Aircraft kind",
+        "glider": "Glider",
+        "airplane": "Airplane",
+        "aircraft": "Aircraft",
         "task": "Task",
         "exer": "Exercise",
         "takeoff": "Takeoff type",
         "fl_start": "Flight start time",
         "fl_end": "Flight end time",
-        "arfield": "Airfield",
+        "airfield": "Airfield",
         "tp_w_op": "Tow plane/winch operator name",
         "tp": "Tow plane",
         "tp_fltime": "Tow plane time of flight",
@@ -73,23 +77,11 @@
         "totalhours": "Total amount of hours flown: ",
         "totalalone": "Total amount of hours flown alone: "
     },
-    "airplane_list": {
-        "flighno": "Flight number",
-        "instr": "Instructor/passenger",
-        "aircraft": "Airplane",
-        "task": "Task",
-        "exer": "Exercise",
-        "fl_start": "Flight start time",
-        "fl_end": "Flight end time",
-        "arfield": "Airfield",
-        "tp_w_op": "Tow plane/winch operator name",
-        "tp": "Tow plane",
-        "tp_fltime": "Tow plane time of flight",
-        "tp_groundtime": "Tow plane time on ground",
-        "tkeep": "Timekeeper",
-        "rem": "Remarks"
-    },
     "account": {
         "header": "Account balance"
+    },
+    "timekeeper": {
+        "header": "Timekeeper section",
+        "flight_head": "Timekeeper's flight list"
     }
 }

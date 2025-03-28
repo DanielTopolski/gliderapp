@@ -48,16 +48,20 @@
         "totalalone": "Nalot samodzielny: ",
         "winch": "Pozwolenie na start z wyciągarką: "
     },
-    "glider_list": {
+    "flight_list": {
         "flightno": "Numer lotu",
+        "pilot": "Pilot",
         "instr": "Instruktor/pasażer",
-        "aircraft": "Szybowiec",
+        "air_kind": "Rodzaj SP",
+        "glider": "Szybowiec",
+        "airplane": "Samolot",
+        "aircraft": "Statek powietrzny",
         "task": "Zadanie",
         "exer": "Ćwiczenie",
         "takeoff": "Typ startu",
         "fl_start": "Godzina startu",
         "fl_end": "Godzina lądowania",
-        "arfield": "Lotnisko",
+        "airfield": "Lotnisko",
         "tp_w_op": "Pilot holówki/operator wyciągarki",
         "tp": "Holówka",
         "tp_fltime": "Czas lotu holówki",
@@ -75,5 +79,9 @@
     },
     "account": {
         "header": "Stan konta"
+    },
+    "timekeeper": {
+        "header": "Chronometrażysta",
+        "flight_head": "Lista lotów wpisanych przez chronometrażystę"
     }
 }
