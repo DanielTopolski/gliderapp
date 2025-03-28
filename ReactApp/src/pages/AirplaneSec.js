@@ -9,7 +9,7 @@ import { useTranslation } from 'react-i18next';
 const AirplaneSec = () => {
     const { t } = useTranslation();
 
-    const flight_data = useDB('detailed_flight_list',null,'and(aircraft_kind.eq.airplane,or(pilot_id.eq.1,instructor_passenger_id.eq.1))');
+    const flight_data = useDB('view_detailed_flight_list',null,'and(aircraft_kind.eq.airplane,or(pilot_id.eq.1,instructor_passenger_id.eq.1))');
     const docs_data = useDB('pilot_airplane',null,'pilot_id.eq.1');
 
     return (

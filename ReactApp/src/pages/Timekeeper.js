@@ -9,7 +9,7 @@ import FlightAdding from './Adding';
 
 const Timekeeper = () => {
     const { t } = useTranslation();
-    const flight_data = useDB('detailed_flight_list',null,'timekeeper_id.eq.1');
+    const flight_data = useDB('view_detailed_flight_list',null,'timekeeper_id.eq.1');
 
     return (
         <>
