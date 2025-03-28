@@ -21,7 +21,8 @@ const Layout = () => {
                 </button>
                 ))}
             </div>
-            <nav>
+            <div className={styles.navmenu}>
+                <nav>
                         <Link to="/home" className={styles.navButton}>
                             <button>{t('layout.start')}</button>
                         </Link>
@@ -43,8 +44,8 @@ const Layout = () => {
                         <Link to="/" className={styles.navButton}>
                             <button>{t('layout.signout')}</button>
                         </Link>
-            </nav>
-
+                </nav>
+            </div>
             <Outlet />
         </>
     );

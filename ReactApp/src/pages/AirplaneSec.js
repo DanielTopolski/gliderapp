@@ -14,9 +14,9 @@ const AirplaneSec = () => {
 
     return (
         <>
-            <h1>{t('airplane.header')}</h1>
+            <h1 className={styles.pageHeader}>{t('airplane.header')}</h1>
             <hr />
-            <h2>{t('airplane.flight_head')}</h2>
+            <h2 className={styles.pageHeader}>{t('airplane.flight_head')}</h2>
             <div className="card">  
                     <DataTable value={flight_data} columnResizeMode="expand" resizableColumns showGridlines scrollable scrollHeight="400px">
                         <Column field="flight_number" header={t('flight_list.flightno')} style={{ minWidth: '100px' }}></Column>
@@ -32,7 +32,7 @@ const AirplaneSec = () => {
                     </DataTable>
             </div>
             <hr />
-            <h2>{t('airplane.pdata_head')}</h2>
+            <h2 className={styles.pageHeader}>{t('airplane.pdata_head')}</h2>
             {docs_data && docs_data.map((item) => {
                       return (
                             <div title={"Airplane section data"} className={styles.persInfo} key={item.pilot_id}>

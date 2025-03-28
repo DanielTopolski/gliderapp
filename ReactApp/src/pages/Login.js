@@ -65,8 +65,8 @@ export default function LoginForm() {
                 </button>
                 ))}
             </div>
-            <h1>{t('login.main')}</h1>
-            <h2>{t('login.head')}</h2>
+            <h1 className={styles.pageHeader}>{t('login.main')}</h1>
+            <h2 className={styles.pageHeader}>{t('login.head')}</h2>
             <div style={{textAlign: "center", margin: "auto"}}>
                 <Link to="/home">
                     <button>{t('login.skip')}</button>

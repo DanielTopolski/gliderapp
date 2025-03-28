@@ -14,10 +14,10 @@ const GliderSec = () => {
 
     return (
         <>
-            <h1>{t('glider.header')}</h1>
+            <h1 className={styles.pageHeader}>{t('glider.header')}</h1>
             <hr />
             <div className="card">
-            <h2>{t('glider.flight_head')}</h2>
+            <h2 className={styles.pageHeader}>{t('glider.flight_head')}</h2>
                     <DataTable value={flight_data} columnResizeMode="expand" resizableColumns showGridlines scrollable scrollHeight="400px">
                         <Column field="flight_number" header={t('flight_list.flightno')} style={{ minWidth: '100px' }}></Column>
                         <Column field="instructor_passenger_name" header={t('flight_list.instr')} style={{ minWidth: '100px' }}></Column>
@@ -36,7 +36,7 @@ const GliderSec = () => {
                         <Column field="remarks" header={t('flight_list.rem')} style={{ minWidth: '100px' }}></Column>
                     </DataTable>
             </div>
-            <h2>{t('glider.pdata_head')}</h2>
+            <h2 className={styles.pageHeader}>{t('glider.pdata_head')}</h2>
             {docs_data && docs_data.map((item) => {
                       return (
                             <div title={"Glider section data"} className={styles.persInfo} key={item.pilot_id}>

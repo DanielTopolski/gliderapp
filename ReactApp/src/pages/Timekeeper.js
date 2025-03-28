@@ -1,8 +1,10 @@
-import React from "react"
-import useDB from "../modules/useDB"
+import React from "react";
+import styles from "../App.module.css";
+import useDB from "../modules/useDB";
 import { DataTable } from 'primereact/datatable';
 import { Column } from 'primereact/column';
 import { useTranslation } from 'react-i18next';
+import FlightAdding from './Adding';
 
 
 const Timekeeper = () => {
@@ -11,10 +13,13 @@ const Timekeeper = () => {
 
     return (
         <>
-            <h1>{t('timekeeper.header')}</h1>
+            <h1 className={styles.pageHeader}>{t('timekeeper.header')}</h1>
+            <hr />
+            <h2 className={styles.pageHeader}>Add new flight: </h2>
+            <FlightAdding />
             <hr />
             <div className="card">
-                <h2>{t('timekeeper.flight_head')}</h2>
+                <h2 className={styles.pageHeader}>{t('timekeeper.flight_head')}</h2>
                 <DataTable value={flight_data} columnResizeMode="expand" resizableColumns showGridlines scrollable scrollHeight="400px">
                     <Column field="flight_number" header={t('flight_list.flightno')} style={{ minWidth: '100px' }}></Column>
                     <Column field="pilot_name" header={t('flight_list.pilot')} style={{ minWidth: '100px' }}></Column>

@@ -11,7 +11,7 @@ const Personal = () => {
 
     return (
             <>
-                <h1>{t('personal.info_header')}</h1>
+                <h1 className={styles.pageHeader}>{t('personal.info_header')}</h1>
                 <hr />
                 {data && data.map((item) => {
                         return (
